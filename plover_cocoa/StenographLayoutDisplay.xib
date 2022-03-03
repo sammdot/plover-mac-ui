@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StenographDisplayController">
+            <connections>
+                <outlet property="A" destination="fTh-2g-uho" id="fTh-2g-uhF"/>
+                <outlet property="E" destination="8DK-dC-mOC" id="8DK-dC-mOF"/>
+                <outlet property="O" destination="8RD-Cx-i2d" id="8RD-Cx-i2F"/>
+                <outlet property="U" destination="JNf-sP-x3X" id="JNf-sP-x3F"/>
+                <outlet property="asterisk" destination="Ovf-gf-Xgf" id="Ovf-gf-XgF"/>
+                <outlet property="leftH" destination="0M3-68-4mH" id="0M3-68-4mF"/>
+                <outlet property="leftK" destination="Hh1-bm-U53" id="Hh1-bm-U5F"/>
+                <outlet property="leftP" destination="9ti-Hx-xBD" id="9ti-Hx-xBF"/>
+                <outlet property="leftR" destination="PbT-Di-dws" id="PbT-Di-dwF"/>
+                <outlet property="leftS" destination="Xho-G4-Ij1" id="Xho-G4-IjF"/>
+                <outlet property="leftT" destination="3ud-lj-xVE" id="3ud-lj-xVF"/>
+                <outlet property="leftW" destination="rUX-zB-uwp" id="rUX-zB-uwF"/>
+                <outlet property="numberBar" destination="XXJ-BP-AJT" id="XXJ-BP-AJF"/>
+                <outlet property="rightB" destination="iSh-5G-d2s" id="iSh-5G-d2F"/>
+                <outlet property="rightD" destination="YLl-wo-qax" id="YLl-wo-qaF"/>
+                <outlet property="rightF" destination="527-3S-ZZX" id="527-3S-ZZF"/>
+                <outlet property="rightG" destination="niz-XS-xny" id="niz-XS-xnF"/>
+                <outlet property="rightL" destination="eXV-gf-rWU" id="eXV-gf-rWF"/>
+                <outlet property="rightP" destination="4JV-Zl-pO9" id="4JV-Zl-pOF"/>
+                <outlet property="rightR" destination="uFB-Ir-3As" id="uFB-Ir-3AF"/>
+                <outlet property="rightS" destination="tRy-LB-mV5" id="tRy-LB-mVF"/>
+                <outlet property="rightT" destination="Sav-yU-NTv" id="Sav-yU-NTF"/>
+                <outlet property="rightZ" destination="t2L-lD-TnR" id="t2L-lD-TnF"/>
+                <outlet property="stenomark" destination="05H-GJ-Ah7" id="05H-GJ-AhF"/>
+                <outlet property="view" destination="s3e-PE-iXc" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="s3e-PE-iXc" customClass="StenographDisplayView">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView identifier="leftT" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-lj-xVE" customClass="StenoKeyView">
+                    <rect key="frame" x="82" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="rma-Ml-meu"/>
+                        <constraint firstAttribute="height" constant="54" id="xxh-Gj-tS7"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftK" translatesAutoresizingMaskIntoConstraints="NO" id="Hh1-bm-U53" customClass="StenoKeyView">
+                    <rect key="frame" x="82" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="PCn-vw-097"/>
+                        <constraint firstAttribute="width" constant="30" id="SsK-hx-iUV"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftP" translatesAutoresizingMaskIntoConstraints="NO" id="9ti-Hx-xBD" customClass="StenoKeyView">
+                    <rect key="frame" x="120" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Zpd-L2-vG0"/>
+                        <constraint firstAttribute="height" constant="54" id="oRH-SB-9hc"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftH" translatesAutoresizingMaskIntoConstraints="NO" id="0M3-68-4mH" customClass="StenoKeyView">
+                    <rect key="frame" x="158" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="I78-oE-n1V"/>
+                        <constraint firstAttribute="width" constant="30" id="JSg-mH-jnZ"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftR" translatesAutoresizingMaskIntoConstraints="NO" id="PbT-Di-dws" customClass="StenoKeyView">
+                    <rect key="frame" x="158" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="U20-VH-jtW"/>
+                        <constraint firstAttribute="height" constant="54" id="aEg-HU-whc"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightF" translatesAutoresizingMaskIntoConstraints="NO" id="527-3S-ZZX" customClass="StenoKeyView">
+                    <rect key="frame" x="246" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="hks-ss-dkS"/>
+                        <constraint firstAttribute="height" constant="54" id="sX0-Xj-Zcg"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightR" translatesAutoresizingMaskIntoConstraints="NO" id="uFB-Ir-3As" customClass="StenoKeyView">
+                    <rect key="frame" x="246" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="mQz-mt-UtX"/>
+                        <constraint firstAttribute="width" constant="30" id="tm6-JI-uAe"/>
+                    </constraints>
+                </customView>
+                <customView identifier="asterisk" translatesAutoresizingMaskIntoConstraints="NO" id="Ovf-gf-Xgf" customClass="StenoKeyView">
+                    <rect key="frame" x="204" y="82" width="40" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="crA-ip-EPs"/>
+                        <constraint firstAttribute="height" constant="110" id="x69-X9-gqg"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightP" translatesAutoresizingMaskIntoConstraints="NO" id="4JV-Zl-pO9" customClass="StenoKeyView">
+                    <rect key="frame" x="284" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="5Pk-0R-gXT"/>
+                        <constraint firstAttribute="height" constant="54" id="nZ8-5y-sLq"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightB" translatesAutoresizingMaskIntoConstraints="NO" id="iSh-5G-d2s" customClass="StenoKeyView">
+                    <rect key="frame" x="284" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="OK8-ww-idT"/>
+                        <constraint firstAttribute="width" constant="30" id="SBL-yI-CcK"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightL" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-gf-rWU" customClass="StenoKeyView">
+                    <rect key="frame" x="322" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="7Uq-xy-Gn7"/>
+                        <constraint firstAttribute="width" constant="30" id="oQk-IC-xwo"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightG" translatesAutoresizingMaskIntoConstraints="NO" id="niz-XS-xny" customClass="StenoKeyView">
+                    <rect key="frame" x="322" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="CLK-gt-uAq"/>
+                        <constraint firstAttribute="height" constant="54" id="VNd-Hq-RFd"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightT" translatesAutoresizingMaskIntoConstraints="NO" id="Sav-yU-NTv" customClass="StenoKeyView">
+                    <rect key="frame" x="360" y="138" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="BX4-dG-fS4"/>
+                        <constraint firstAttribute="width" constant="30" id="lGD-AS-B3e"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightS" translatesAutoresizingMaskIntoConstraints="NO" id="tRy-LB-mV5" customClass="StenoKeyView">
+                    <rect key="frame" x="360" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="r8G-P3-jR9"/>
+                        <constraint firstAttribute="width" constant="30" id="yum-XJ-WN3"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightD" translatesAutoresizingMaskIntoConstraints="NO" id="YLl-wo-qax" customClass="StenoKeyView">
+                    <rect key="frame" x="392" y="138" width="40" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="L6R-kC-FNu"/>
+                        <constraint firstAttribute="height" constant="54" id="z7w-Ti-WxF"/>
+                    </constraints>
+                </customView>
+                <customView identifier="rightZ" translatesAutoresizingMaskIntoConstraints="NO" id="t2L-lD-TnR" customClass="StenoKeyView">
+                    <rect key="frame" x="392" y="82" width="40" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="mOd-Tc-jIa"/>
+                        <constraint firstAttribute="height" constant="54" id="sao-ev-HUK"/>
+                    </constraints>
+                </customView>
+                <customView identifier="numberBar" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-BP-AJT" customClass="StenoKeyView">
+                    <rect key="frame" x="44" y="194" width="388" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="G0u-30-cgw"/>
+                    </constraints>
+                </customView>
+                <customView identifier="A" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-2g-uho" customClass="StenoKeyView">
+                    <rect key="frame" x="144" y="8" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="a0B-Vc-fMZ"/>
+                        <constraint firstAttribute="width" constant="30" id="bYx-k1-gFz"/>
+                    </constraints>
+                </customView>
+                <customView identifier="O" translatesAutoresizingMaskIntoConstraints="NO" id="8RD-Cx-i2d" customClass="StenoKeyView">
+                    <rect key="frame" x="182" y="8" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Ase-w2-BOo"/>
+                        <constraint firstAttribute="height" constant="54" id="MhZ-iP-0Qs"/>
+                    </constraints>
+                </customView>
+                <customView identifier="E" translatesAutoresizingMaskIntoConstraints="NO" id="8DK-dC-mOC" customClass="StenoKeyView">
+                    <rect key="frame" x="252" y="8" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="InK-nk-ziB"/>
+                        <constraint firstAttribute="width" constant="30" id="Rhl-VY-7jw"/>
+                    </constraints>
+                </customView>
+                <customView identifier="U" translatesAutoresizingMaskIntoConstraints="NO" id="JNf-sP-x3X" customClass="StenoKeyView">
+                    <rect key="frame" x="290" y="8" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="dWc-V4-YWv"/>
+                        <constraint firstAttribute="height" constant="54" id="q0U-l0-y4G"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftS" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-G4-Ij1" customClass="StenoKeyView">
+                    <rect key="frame" x="44" y="82" width="30" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="0sP-ZV-ip9"/>
+                        <constraint firstAttribute="height" constant="110" id="zqU-cZ-5E4"/>
+                    </constraints>
+                </customView>
+                <customView identifier="leftW" translatesAutoresizingMaskIntoConstraints="NO" id="rUX-zB-uwp" customClass="StenoKeyView">
+                    <rect key="frame" x="120" y="82" width="30" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="k8y-Nh-0Lx"/>
+                        <constraint firstAttribute="height" constant="54" id="olu-0u-N5y"/>
+                    </constraints>
+                </customView>
+                <customView identifier="stenomark" translatesAutoresizingMaskIntoConstraints="NO" id="05H-GJ-Ah7" customClass="StenoKeyView">
+                    <rect key="frame" x="402" y="8" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ttE-Bp-OSJ"/>
+                        <constraint firstAttribute="width" constant="30" id="zd8-y0-YUy"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JNf-sP-x3X" secondAttribute="bottom" constant="8" id="0WA-IS-NID"/>
+                <constraint firstItem="Xho-G4-Ij1" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="27V-7T-55e"/>
+                <constraint firstItem="0M3-68-4mH" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="2GO-UF-lTo"/>
+                <constraint firstItem="XXJ-BP-AJT" firstAttribute="leading" secondItem="s3e-PE-iXc" secondAttribute="leading" constant="44" id="2bm-Wx-5P9"/>
+                <constraint firstItem="eXV-gf-rWU" firstAttribute="leading" secondItem="4JV-Zl-pO9" secondAttribute="trailing" constant="8" id="3ZQ-fj-FUL"/>
+                <constraint firstItem="Xho-G4-Ij1" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="5E5-RF-o9g"/>
+                <constraint firstItem="tRy-LB-mV5" firstAttribute="leading" secondItem="niz-XS-xny" secondAttribute="trailing" constant="8" id="7zb-Fe-EUW"/>
+                <constraint firstItem="t2L-lD-TnR" firstAttribute="leading" secondItem="tRy-LB-mV5" secondAttribute="trailing" constant="2" id="8Cv-ir-2cy"/>
+                <constraint firstItem="4JV-Zl-pO9" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="8Hp-pk-5yc"/>
+                <constraint firstItem="527-3S-ZZX" firstAttribute="leading" secondItem="Ovf-gf-Xgf" secondAttribute="trailing" constant="2" id="8hZ-sY-EoN"/>
+                <constraint firstItem="3ud-lj-xVE" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="8ly-Ui-nAW"/>
+                <constraint firstItem="3ud-lj-xVE" firstAttribute="leading" secondItem="Xho-G4-Ij1" secondAttribute="trailing" constant="8" id="9UE-aM-Qcd"/>
+                <constraint firstItem="Ovf-gf-Xgf" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="AlB-7s-ft0"/>
+                <constraint firstItem="0M3-68-4mH" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="Avp-yW-V5e"/>
+                <constraint firstItem="rUX-zB-uwp" firstAttribute="top" secondItem="Hh1-bm-U53" secondAttribute="top" id="Baa-T5-Y1O"/>
+                <constraint firstItem="YLl-wo-qax" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="BwK-vc-UBm"/>
+                <constraint firstItem="Sav-yU-NTv" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="Cpf-wW-VaC"/>
+                <constraint firstItem="JNf-sP-x3X" firstAttribute="top" secondItem="iSh-5G-d2s" secondAttribute="bottom" constant="20" id="CzE-bU-ERc"/>
+                <constraint firstItem="eXV-gf-rWU" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="D4Y-eJ-ir2"/>
+                <constraint firstItem="niz-XS-xny" firstAttribute="leading" secondItem="iSh-5G-d2s" secondAttribute="trailing" constant="8" id="Dix-yB-Cvc"/>
+                <constraint firstItem="tRy-LB-mV5" firstAttribute="top" secondItem="Sav-yU-NTv" secondAttribute="bottom" constant="2" id="ESc-Aa-43q"/>
+                <constraint firstItem="9ti-Hx-xBD" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="EXp-Ot-4WS"/>
+                <constraint firstAttribute="bottom" secondItem="8RD-Cx-i2d" secondAttribute="bottom" constant="8" id="GfY-Od-Yoi"/>
+                <constraint firstItem="XXJ-BP-AJT" firstAttribute="top" secondItem="s3e-PE-iXc" secondAttribute="top" constant="10" id="HVU-qO-fZB"/>
+                <constraint firstItem="9ti-Hx-xBD" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="HnP-Zk-br6"/>
+                <constraint firstItem="JNf-sP-x3X" firstAttribute="leading" secondItem="8DK-dC-mOC" secondAttribute="trailing" constant="8" id="Ikk-g7-amN"/>
+                <constraint firstItem="527-3S-ZZX" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="J5m-eS-5Gk"/>
+                <constraint firstAttribute="trailing" secondItem="XXJ-BP-AJT" secondAttribute="trailing" constant="44" id="JFo-y5-iF6"/>
+                <constraint firstItem="05H-GJ-Ah7" firstAttribute="bottom" secondItem="JNf-sP-x3X" secondAttribute="bottom" id="JHH-C8-HGq"/>
+                <constraint firstItem="05H-GJ-Ah7" firstAttribute="trailing" secondItem="t2L-lD-TnR" secondAttribute="trailing" id="JaJ-h1-ScV"/>
+                <constraint firstItem="Hh1-bm-U53" firstAttribute="leading" secondItem="Xho-G4-Ij1" secondAttribute="trailing" constant="8" id="Jdi-mn-DGj"/>
+                <constraint firstItem="fTh-2g-uho" firstAttribute="leading" secondItem="s3e-PE-iXc" secondAttribute="leading" constant="144" id="Jnd-1F-OS2"/>
+                <constraint firstItem="8DK-dC-mOC" firstAttribute="leading" secondItem="8RD-Cx-i2d" secondAttribute="trailing" constant="40" id="Kyt-oB-GGf"/>
+                <constraint firstItem="PbT-Di-dws" firstAttribute="top" secondItem="0M3-68-4mH" secondAttribute="bottom" constant="2" id="Lyf-nO-N7A"/>
+                <constraint firstItem="rUX-zB-uwp" firstAttribute="leading" secondItem="Hh1-bm-U53" secondAttribute="trailing" constant="8" id="NdA-wx-XHs"/>
+                <constraint firstAttribute="bottom" secondItem="fTh-2g-uho" secondAttribute="bottom" constant="8" id="Sox-Id-Sn7"/>
+                <constraint firstItem="uFB-Ir-3As" firstAttribute="leading" secondItem="Ovf-gf-Xgf" secondAttribute="trailing" constant="2" id="TR5-Im-5SP"/>
+                <constraint firstItem="uFB-Ir-3As" firstAttribute="top" secondItem="527-3S-ZZX" secondAttribute="bottom" constant="2" id="Tvc-rg-dbp"/>
+                <constraint firstItem="0M3-68-4mH" firstAttribute="leading" secondItem="9ti-Hx-xBD" secondAttribute="trailing" constant="8" id="UOc-7s-Hmj"/>
+                <constraint firstItem="iSh-5G-d2s" firstAttribute="leading" secondItem="uFB-Ir-3As" secondAttribute="trailing" constant="8" id="ZlX-0z-ygL"/>
+                <constraint firstItem="t2L-lD-TnR" firstAttribute="top" secondItem="YLl-wo-qax" secondAttribute="bottom" constant="2" id="bFN-AG-YV1"/>
+                <constraint firstAttribute="trailing" secondItem="t2L-lD-TnR" secondAttribute="trailing" constant="44" id="cMq-KG-uw1"/>
+                <constraint firstItem="Xho-G4-Ij1" firstAttribute="leading" secondItem="s3e-PE-iXc" secondAttribute="leading" constant="44" id="coU-Wa-1Mc"/>
+                <constraint firstAttribute="trailing" secondItem="YLl-wo-qax" secondAttribute="trailing" constant="44" id="d8Z-xy-fWt"/>
+                <constraint firstItem="Sav-yU-NTv" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="gsK-YE-ztq"/>
+                <constraint firstItem="iSh-5G-d2s" firstAttribute="top" secondItem="4JV-Zl-pO9" secondAttribute="bottom" constant="2" id="jBP-kr-onR"/>
+                <constraint firstItem="Hh1-bm-U53" firstAttribute="top" secondItem="3ud-lj-xVE" secondAttribute="bottom" constant="2" id="k7y-YO-jfP"/>
+                <constraint firstItem="9ti-Hx-xBD" firstAttribute="leading" secondItem="3ud-lj-xVE" secondAttribute="trailing" constant="8" id="mFF-Gc-zu3"/>
+                <constraint firstItem="3ud-lj-xVE" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="mqJ-f0-E8W"/>
+                <constraint firstItem="Sav-yU-NTv" firstAttribute="leading" secondItem="eXV-gf-rWU" secondAttribute="trailing" constant="8" id="nHf-ep-14S"/>
+                <constraint firstItem="527-3S-ZZX" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="nhb-Wa-7LR"/>
+                <constraint firstItem="YLl-wo-qax" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="pdy-Kc-dkn"/>
+                <constraint firstItem="4JV-Zl-pO9" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="ppw-MH-BsL"/>
+                <constraint firstAttribute="bottom" secondItem="8DK-dC-mOC" secondAttribute="bottom" constant="8" id="rnG-2i-aMT"/>
+                <constraint firstItem="PbT-Di-dws" firstAttribute="leading" secondItem="rUX-zB-uwp" secondAttribute="trailing" constant="8" id="rod-qf-Bzi"/>
+                <constraint firstItem="4JV-Zl-pO9" firstAttribute="leading" secondItem="527-3S-ZZX" secondAttribute="trailing" constant="8" id="sSo-pn-FAd"/>
+                <constraint firstItem="8RD-Cx-i2d" firstAttribute="leading" secondItem="fTh-2g-uho" secondAttribute="trailing" constant="8" id="sW7-lf-jw8"/>
+                <constraint firstItem="eXV-gf-rWU" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="tSc-CC-Ijc"/>
+                <constraint firstItem="8DK-dC-mOC" firstAttribute="top" secondItem="uFB-Ir-3As" secondAttribute="bottom" constant="20" id="u2h-dj-t6k"/>
+                <constraint firstItem="YLl-wo-qax" firstAttribute="leading" secondItem="Sav-yU-NTv" secondAttribute="trailing" constant="2" id="uHV-Bn-xZh"/>
+                <constraint firstItem="niz-XS-xny" firstAttribute="top" secondItem="eXV-gf-rWU" secondAttribute="bottom" constant="2" id="wiM-wo-qJN"/>
+                <constraint firstItem="Ovf-gf-Xgf" firstAttribute="top" secondItem="XXJ-BP-AJT" secondAttribute="bottom" constant="2" id="yRp-JF-by7"/>
+            </constraints>
+            <point key="canvasLocation" x="83" y="94"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QwertyDisplayController">
+            <connections>
+                <outlet property="one" destination="45C-JM-kAc" id="45C-JM-kAp"/>
+                <outlet property="two" destination="xUM-Um-Ws1" id="xUM-Um-Wsp"/>
+                <outlet property="three" destination="sTb-Eo-MHg" id="sTb-Eo-MHp"/>
+                <outlet property="four" destination="Ice-El-K3R" id="Ice-El-K3p"/>
+                <outlet property="five" destination="8a4-f4-K7c" id="8a4-f4-K7p"/>
+                <outlet property="six" destination="oLL-SP-aqj" id="oLL-SP-aqp"/>
+                <outlet property="seven" destination="vtJ-4F-Sx0" id="vtJ-4F-Sxp"/>
+                <outlet property="eight" destination="W0L-1y-w64" id="W0L-1y-w6p"/>
+                <outlet property="nine" destination="PpS-Zn-dqP" id="PpS-Zn-dqp"/>
+                <outlet property="zero" destination="BOF-Tn-tjR" id="BOF-Tn-tjp"/>
+                <outlet property="minus" destination="ra8-lJ-8tD" id="ra8-lJ-8tp"/>
+                <outlet property="equals" destination="gPP-ZV-RBZ" id="gPP-ZV-RBp"/>
+                <outlet property="q" destination="Hhi-E1-bTW" id="Hhi-E1-bTp"/>
+                <outlet property="w" destination="pcY-jQ-vkx" id="pcY-jQ-vkp"/>
+                <outlet property="e" destination="7Hb-xE-iPV" id="7Hb-xE-iPp"/>
+                <outlet property="r" destination="qgy-MT-r0v" id="qgy-MT-r0p"/>
+                <outlet property="t" destination="Xqe-Sm-k1Y" id="Xqe-Sm-k1p"/>
+                <outlet property="y" destination="inj-oG-Egn" id="inj-oG-Egp"/>
+                <outlet property="u" destination="h9d-fn-VDy" id="h9d-fn-VDp"/>
+                <outlet property="i" destination="5kE-Vd-Ibe" id="5kE-Vd-Ibp"/>
+                <outlet property="o" destination="16M-6K-3tG" id="16M-6K-3tp"/>
+                <outlet property="p" destination="aF1-mu-H7h" id="aF1-mu-H7p"/>
+                <outlet property="bracketleft" destination="Pk2-C2-gfJ" id="Pk2-C2-gfp"/>
+                <outlet property="bracketright" destination="3eg-ZR-0XM" id="3eg-ZR-0Xp"/>
+                <outlet property="a" destination="OTb-FY-UrR" id="OTb-FY-Urp"/>
+                <outlet property="s" destination="I2y-wE-3Wv" id="I2y-wE-3Wp"/>
+                <outlet property="d" destination="Pfu-DT-5OH" id="Pfu-DT-5Op"/>
+                <outlet property="f" destination="yXJ-yV-JqP" id="yXJ-yV-Jqp"/>
+                <outlet property="g" destination="KDH-BJ-ttu" id="KDH-BJ-ttp"/>
+                <outlet property="h" destination="opb-8g-TCi" id="opb-8g-TCp"/>
+                <outlet property="j" destination="xY3-t9-MFJ" id="xY3-t9-MFp"/>
+                <outlet property="k" destination="IiB-yF-m2C" id="IiB-yF-m2p"/>
+                <outlet property="l" destination="219-Qf-qR6" id="219-Qf-qRp"/>
+                <outlet property="semicolon" destination="F5F-Tx-jb2" id="F5F-Tx-jbp"/>
+                <outlet property="apostrophe" destination="1ao-fQ-cS9" id="1ao-fQ-cSp"/>
+                <outlet property="backslash" destination="Td6-g5-5pL" id="Td6-g5-5pp"/>
+                <outlet property="z" destination="HK2-VR-KXu" id="HK2-VR-KXp"/>
+                <outlet property="x" destination="bLO-HZ-6kK" id="bLO-HZ-6kp"/>
+                <outlet property="c" destination="Zkz-Aj-66k" id="Zkz-Aj-66p"/>
+                <outlet property="v" destination="VJe-6c-FIv" id="VJe-6c-FIp"/>
+                <outlet property="b" destination="yN7-9D-oca" id="yN7-9D-ocp"/>
+                <outlet property="n" destination="tnT-et-kQX" id="tnT-et-kQp"/>
+                <outlet property="m" destination="POy-Md-4Hx" id="POy-Md-4Hp"/>
+                <outlet property="comma" destination="Rwo-FU-Ami" id="Rwo-FU-Amp"/>
+                <outlet property="period" destination="Osc-V4-cFM" id="Osc-V4-cFp"/>
+                <outlet property="slash" destination="1t9-M6-OcD" id="1t9-M6-Ocp"/>
+                <outlet property="space" destination="HiL-NB-de5" id="HiL-NB-dep"/>
+                <outlet property="view" destination="dlj-G6-BoI" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="dlj-G6-BoI" customClass="QwertyDisplayView">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView identifier="one" translatesAutoresizingMaskIntoConstraints="NO" id="45C-JM-kAc" customClass="StenoKeyView">
+                    <rect key="frame" x="0.0" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="2MN-f5-gj5"/>
+                        <constraint firstAttribute="width" constant="36" id="XRU-Fi-ioD"/>
+                    </constraints>
+                </customView>
+                <customView identifier="two" translatesAutoresizingMaskIntoConstraints="NO" id="xUM-Um-Ws1" customClass="StenoKeyView">
+                    <rect key="frame" x="38" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="KIp-tq-eSA"/>
+                        <constraint firstAttribute="height" constant="36" id="Nvq-ig-Ewt"/>
+                    </constraints>
+                </customView>
+                <customView identifier="three" translatesAutoresizingMaskIntoConstraints="NO" id="sTb-Eo-MHg" customClass="StenoKeyView">
+                    <rect key="frame" x="76" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="lzc-er-vw6"/>
+                        <constraint firstAttribute="width" constant="36" id="mN8-8n-d0E"/>
+                    </constraints>
+                </customView>
+                <customView identifier="four" translatesAutoresizingMaskIntoConstraints="NO" id="Ice-El-K3R" customClass="StenoKeyView">
+                    <rect key="frame" x="114" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="3Al-ex-wAO"/>
+                        <constraint firstAttribute="width" constant="36" id="liS-p9-qWE"/>
+                    </constraints>
+                </customView>
+                <customView identifier="five" translatesAutoresizingMaskIntoConstraints="NO" id="8a4-f4-K7c" customClass="StenoKeyView">
+                    <rect key="frame" x="152" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="GRG-p5-A8B"/>
+                        <constraint firstAttribute="width" constant="36" id="YK7-V7-mkq"/>
+                    </constraints>
+                </customView>
+                <customView identifier="six" translatesAutoresizingMaskIntoConstraints="NO" id="oLL-SP-aqj" customClass="StenoKeyView">
+                    <rect key="frame" x="190" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="0bs-DP-elm"/>
+                        <constraint firstAttribute="width" constant="36" id="4K5-YW-8zC"/>
+                    </constraints>
+                </customView>
+                <customView identifier="seven" translatesAutoresizingMaskIntoConstraints="NO" id="vtJ-4F-Sx0" customClass="StenoKeyView">
+                    <rect key="frame" x="228" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Cn0-9R-xsj"/>
+                        <constraint firstAttribute="height" constant="36" id="IrZ-em-KDR"/>
+                    </constraints>
+                </customView>
+                <customView identifier="eight" translatesAutoresizingMaskIntoConstraints="NO" id="W0L-1y-w64" customClass="StenoKeyView">
+                    <rect key="frame" x="266" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="45h-Af-Bdd"/>
+                        <constraint firstAttribute="height" constant="36" id="7XN-tm-x2W"/>
+                    </constraints>
+                </customView>
+                <customView identifier="nine" translatesAutoresizingMaskIntoConstraints="NO" id="PpS-Zn-dqP" customClass="StenoKeyView">
+                    <rect key="frame" x="304" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="os2-4d-erL"/>
+                        <constraint firstAttribute="height" constant="36" id="tsv-OT-dGD"/>
+                    </constraints>
+                </customView>
+                <customView identifier="zero" translatesAutoresizingMaskIntoConstraints="NO" id="BOF-Tn-tjR" customClass="StenoKeyView">
+                    <rect key="frame" x="342" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="A6A-fS-mZm"/>
+                        <constraint firstAttribute="width" constant="36" id="Dt7-cI-JLb"/>
+                    </constraints>
+                </customView>
+                <customView identifier="minus" translatesAutoresizingMaskIntoConstraints="NO" id="ra8-lJ-8tD" customClass="StenoKeyView">
+                    <rect key="frame" x="380" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="aGN-Ex-Sq7"/>
+                        <constraint firstAttribute="width" constant="36" id="f1d-Kj-1rv"/>
+                    </constraints>
+                </customView>
+                <customView identifier="equals" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-ZV-RBZ" customClass="StenoKeyView">
+                    <rect key="frame" x="418" y="174" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="4Zq-V4-3uw"/>
+                        <constraint firstAttribute="height" constant="36" id="Olh-Jc-FhM"/>
+                    </constraints>
+                </customView>
+                <customView identifier="q" translatesAutoresizingMaskIntoConstraints="NO" id="Hhi-E1-bTW" customClass="StenoKeyView">
+                    <rect key="frame" x="11" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="W0l-aZ-nyg"/>
+                        <constraint firstAttribute="height" constant="36" id="WUe-Bq-f41"/>
+                    </constraints>
+                </customView>
+                <customView identifier="w" translatesAutoresizingMaskIntoConstraints="NO" id="pcY-jQ-vkx" customClass="StenoKeyView">
+                    <rect key="frame" x="49" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Vyv-KM-POE"/>
+                        <constraint firstAttribute="height" constant="36" id="uJx-ig-cgs"/>
+                    </constraints>
+                </customView>
+                <customView identifier="e" translatesAutoresizingMaskIntoConstraints="NO" id="7Hb-xE-iPV" customClass="StenoKeyView">
+                    <rect key="frame" x="87" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="PRl-XR-eKF"/>
+                        <constraint firstAttribute="width" constant="36" id="sny-1O-4ct"/>
+                    </constraints>
+                </customView>
+                <customView identifier="r" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-MT-r0v" customClass="StenoKeyView">
+                    <rect key="frame" x="125" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="xao-LA-W3e"/>
+                        <constraint firstAttribute="height" constant="36" id="zu5-kn-bBh"/>
+                    </constraints>
+                </customView>
+                <customView identifier="t" translatesAutoresizingMaskIntoConstraints="NO" id="Xqe-Sm-k1Y" customClass="StenoKeyView">
+                    <rect key="frame" x="163" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Jp3-3N-Y1n"/>
+                        <constraint firstAttribute="width" constant="36" id="QKM-5x-xVf"/>
+                    </constraints>
+                </customView>
+                <customView identifier="y" translatesAutoresizingMaskIntoConstraints="NO" id="inj-oG-Egn" customClass="StenoKeyView">
+                    <rect key="frame" x="201" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="J6e-oJ-y2f"/>
+                        <constraint firstAttribute="height" constant="36" id="joX-fQ-75E"/>
+                    </constraints>
+                </customView>
+                <customView identifier="u" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-fn-VDy" customClass="StenoKeyView">
+                    <rect key="frame" x="239" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="41m-ZO-0CG"/>
+                        <constraint firstAttribute="width" constant="36" id="d8v-yN-Kzt"/>
+                    </constraints>
+                </customView>
+                <customView identifier="i" translatesAutoresizingMaskIntoConstraints="NO" id="5kE-Vd-Ibe" customClass="StenoKeyView">
+                    <rect key="frame" x="277" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="TsD-Zo-6mk"/>
+                        <constraint firstAttribute="width" constant="36" id="e2v-Lb-YTx"/>
+                    </constraints>
+                </customView>
+                <customView identifier="o" translatesAutoresizingMaskIntoConstraints="NO" id="16M-6K-3tG" customClass="StenoKeyView">
+                    <rect key="frame" x="315" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="5xr-p1-jSl"/>
+                        <constraint firstAttribute="height" constant="36" id="IoO-dC-dDF"/>
+                    </constraints>
+                </customView>
+                <customView identifier="p" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-mu-H7h" customClass="StenoKeyView">
+                    <rect key="frame" x="353" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="UI4-lX-gH3"/>
+                        <constraint firstAttribute="width" constant="36" id="aQD-Xc-z6T"/>
+                    </constraints>
+                </customView>
+                <customView identifier="bracketleft" translatesAutoresizingMaskIntoConstraints="NO" id="Pk2-C2-gfJ" customClass="StenoKeyView">
+                    <rect key="frame" x="391" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="66i-bo-ArR"/>
+                        <constraint firstAttribute="height" constant="36" id="fWV-dv-VnK"/>
+                    </constraints>
+                </customView>
+                <customView identifier="bracketright" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-ZR-0XM" customClass="StenoKeyView">
+                    <rect key="frame" x="429" y="136" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="2Lx-HN-wIX"/>
+                        <constraint firstAttribute="height" constant="36" id="38a-6W-dbl"/>
+                    </constraints>
+                </customView>
+                <customView identifier="a" translatesAutoresizingMaskIntoConstraints="NO" id="OTb-FY-UrR" customClass="StenoKeyView">
+                    <rect key="frame" x="22" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="vRX-As-4RI"/>
+                        <constraint firstAttribute="height" constant="36" id="wdD-9S-dFg"/>
+                    </constraints>
+                </customView>
+                <customView identifier="s" translatesAutoresizingMaskIntoConstraints="NO" id="I2y-wE-3Wv" customClass="StenoKeyView">
+                    <rect key="frame" x="60" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="NRc-b3-VcU"/>
+                        <constraint firstAttribute="width" constant="36" id="NZ3-EN-5ei"/>
+                    </constraints>
+                </customView>
+                <customView identifier="d" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-DT-5OH" customClass="StenoKeyView">
+                    <rect key="frame" x="98" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="NVe-GI-F4z"/>
+                        <constraint firstAttribute="height" constant="36" id="NmJ-v3-FDH"/>
+                    </constraints>
+                </customView>
+                <customView identifier="f" translatesAutoresizingMaskIntoConstraints="NO" id="yXJ-yV-JqP" customClass="StenoKeyView">
+                    <rect key="frame" x="136" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Xgk-bC-DF0"/>
+                        <constraint firstAttribute="width" constant="36" id="q74-S7-PeI"/>
+                    </constraints>
+                </customView>
+                <customView identifier="g" translatesAutoresizingMaskIntoConstraints="NO" id="KDH-BJ-ttu" customClass="StenoKeyView">
+                    <rect key="frame" x="174" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="FFC-7t-1zO"/>
+                        <constraint firstAttribute="height" constant="36" id="hyl-ad-XlM"/>
+                    </constraints>
+                </customView>
+                <customView identifier="h" translatesAutoresizingMaskIntoConstraints="NO" id="opb-8g-TCi" customClass="StenoKeyView">
+                    <rect key="frame" x="212" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="hpD-OR-Sih"/>
+                        <constraint firstAttribute="height" constant="36" id="nka-2h-jso"/>
+                    </constraints>
+                </customView>
+                <customView identifier="j" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-t9-MFJ" customClass="StenoKeyView">
+                    <rect key="frame" x="250" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Dgo-YX-uQz"/>
+                        <constraint firstAttribute="width" constant="36" id="PVd-Vj-8qP"/>
+                    </constraints>
+                </customView>
+                <customView identifier="k" translatesAutoresizingMaskIntoConstraints="NO" id="IiB-yF-m2C" customClass="StenoKeyView">
+                    <rect key="frame" x="288" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="43G-LN-EkO"/>
+                        <constraint firstAttribute="width" constant="36" id="Pre-Rf-vRq"/>
+                    </constraints>
+                </customView>
+                <customView identifier="l" translatesAutoresizingMaskIntoConstraints="NO" id="219-Qf-qR6" customClass="StenoKeyView">
+                    <rect key="frame" x="326" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="8iT-KY-NhS"/>
+                        <constraint firstAttribute="height" constant="36" id="nvs-YB-aXM"/>
+                    </constraints>
+                </customView>
+                <customView identifier="semicolon" translatesAutoresizingMaskIntoConstraints="NO" id="F5F-Tx-jb2" customClass="StenoKeyView">
+                    <rect key="frame" x="364" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="X9B-Nj-WHK"/>
+                        <constraint firstAttribute="width" constant="36" id="zDV-i5-oJq"/>
+                    </constraints>
+                </customView>
+                <customView identifier="apostrophe" translatesAutoresizingMaskIntoConstraints="NO" id="1ao-fQ-cS9" customClass="StenoKeyView">
+                    <rect key="frame" x="402" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="N8p-1R-Idm"/>
+                        <constraint firstAttribute="height" constant="36" id="RNj-hN-Vya"/>
+                    </constraints>
+                </customView>
+                <customView identifier="backslash" translatesAutoresizingMaskIntoConstraints="NO" id="Td6-g5-5pL" customClass="StenoKeyView">
+                    <rect key="frame" x="440" y="98" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="C3M-ky-mH2"/>
+                        <constraint firstAttribute="width" constant="36" id="Pkw-Oe-fGW"/>
+                    </constraints>
+                </customView>
+                <customView identifier="z" translatesAutoresizingMaskIntoConstraints="NO" id="HK2-VR-KXu" customClass="StenoKeyView">
+                    <rect key="frame" x="33" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="QNk-iA-Zkd"/>
+                        <constraint firstAttribute="width" constant="36" id="nUZ-DR-rM9"/>
+                    </constraints>
+                </customView>
+                <customView identifier="x" translatesAutoresizingMaskIntoConstraints="NO" id="bLO-HZ-6kK" customClass="StenoKeyView">
+                    <rect key="frame" x="71" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="l8K-yq-83Q"/>
+                        <constraint firstAttribute="width" constant="36" id="wna-My-Nnh"/>
+                    </constraints>
+                </customView>
+                <customView identifier="c" translatesAutoresizingMaskIntoConstraints="NO" id="Zkz-Aj-66k" customClass="StenoKeyView">
+                    <rect key="frame" x="109" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="XZv-1F-E6P"/>
+                        <constraint firstAttribute="height" constant="36" id="aXP-H4-hwl"/>
+                    </constraints>
+                </customView>
+                <customView identifier="v" translatesAutoresizingMaskIntoConstraints="NO" id="VJe-6c-FIv" customClass="StenoKeyView">
+                    <rect key="frame" x="147" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Cm3-rg-CuZ"/>
+                        <constraint firstAttribute="height" constant="36" id="ace-ZM-ESg"/>
+                    </constraints>
+                </customView>
+                <customView identifier="b" translatesAutoresizingMaskIntoConstraints="NO" id="yN7-9D-oca" customClass="StenoKeyView">
+                    <rect key="frame" x="185" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="dMT-O7-7DG"/>
+                        <constraint firstAttribute="width" constant="36" id="pfN-ci-616"/>
+                    </constraints>
+                </customView>
+                <customView identifier="n" translatesAutoresizingMaskIntoConstraints="NO" id="tnT-et-kQX" customClass="StenoKeyView">
+                    <rect key="frame" x="223" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="AR0-f3-uFr"/>
+                        <constraint firstAttribute="width" constant="36" id="djX-Tu-AHa"/>
+                    </constraints>
+                </customView>
+                <customView identifier="m" translatesAutoresizingMaskIntoConstraints="NO" id="POy-Md-4Hx" customClass="StenoKeyView">
+                    <rect key="frame" x="261" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="n77-wv-miR"/>
+                        <constraint firstAttribute="height" constant="36" id="xDA-Fd-eba"/>
+                    </constraints>
+                </customView>
+                <customView identifier="comma" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-FU-Ami" customClass="StenoKeyView">
+                    <rect key="frame" x="299" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="XAQ-Fs-LNM"/>
+                        <constraint firstAttribute="width" constant="36" id="bEH-Bf-3Hv"/>
+                    </constraints>
+                </customView>
+                <customView identifier="period" translatesAutoresizingMaskIntoConstraints="NO" id="Osc-V4-cFM" customClass="StenoKeyView">
+                    <rect key="frame" x="337" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Jbr-PB-aQm"/>
+                        <constraint firstAttribute="height" constant="36" id="fkS-bE-u22"/>
+                    </constraints>
+                </customView>
+                <customView identifier="slash" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-M6-OcD" customClass="StenoKeyView">
+                    <rect key="frame" x="375" y="60" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="cII-Kb-xHO"/>
+                        <constraint firstAttribute="height" constant="36" id="iDX-5Q-Kl6"/>
+                    </constraints>
+                </customView>
+                <customView identifier="space" translatesAutoresizingMaskIntoConstraints="NO" id="HiL-NB-de5" customClass="StenoKeyView">
+                    <rect key="frame" x="88" y="22" width="236" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="APk-KZ-MP9"/>
+                        <constraint firstAttribute="width" constant="236" id="KSk-eQ-5qF"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="45C-JM-kAc" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="2l3-Kf-sjC"/>
+                <constraint firstItem="7Hb-xE-iPV" firstAttribute="top" secondItem="sTb-Eo-MHg" secondAttribute="bottom" constant="2" id="2w9-7a-wap"/>
+                <constraint firstItem="219-Qf-qR6" firstAttribute="top" secondItem="16M-6K-3tG" secondAttribute="bottom" constant="2" id="4UD-Pe-8uK"/>
+                <constraint firstItem="Zkz-Aj-66k" firstAttribute="leading" secondItem="bLO-HZ-6kK" secondAttribute="trailing" constant="2" id="4fO-nK-sGF"/>
+                <constraint firstItem="tnT-et-kQX" firstAttribute="leading" secondItem="yN7-9D-oca" secondAttribute="trailing" constant="2" id="5TR-Wl-5No"/>
+                <constraint firstItem="pcY-jQ-vkx" firstAttribute="leading" secondItem="Hhi-E1-bTW" secondAttribute="trailing" constant="2" id="5mG-rh-hOw"/>
+                <constraint firstItem="Td6-g5-5pL" firstAttribute="leading" secondItem="1ao-fQ-cS9" secondAttribute="trailing" constant="2" id="5qc-Ut-KMK"/>
+                <constraint firstItem="I2y-wE-3Wv" firstAttribute="top" secondItem="pcY-jQ-vkx" secondAttribute="bottom" constant="2" id="65R-cc-2tN"/>
+                <constraint firstItem="vtJ-4F-Sx0" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="6ay-SP-TfB"/>
+                <constraint firstItem="yN7-9D-oca" firstAttribute="top" secondItem="KDH-BJ-ttu" secondAttribute="bottom" constant="2" id="7BI-9J-eEw"/>
+                <constraint firstItem="Zkz-Aj-66k" firstAttribute="top" secondItem="Pfu-DT-5OH" secondAttribute="bottom" constant="2" id="7RN-u4-jdz"/>
+                <constraint firstItem="yXJ-yV-JqP" firstAttribute="top" secondItem="qgy-MT-r0v" secondAttribute="bottom" constant="2" id="7lE-y7-7XW"/>
+                <constraint firstItem="POy-Md-4Hx" firstAttribute="top" secondItem="xY3-t9-MFJ" secondAttribute="bottom" constant="2" id="8fA-Ph-nFd"/>
+                <constraint firstItem="45C-JM-kAc" firstAttribute="leading" secondItem="dlj-G6-BoI" secondAttribute="leading" id="8v5-cL-O3x"/>
+                <constraint firstItem="oLL-SP-aqj" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="9O0-pg-QRx"/>
+                <constraint firstItem="h9d-fn-VDy" firstAttribute="leading" secondItem="inj-oG-Egn" secondAttribute="trailing" constant="2" id="APO-HZ-5lY"/>
+                <constraint firstItem="tnT-et-kQX" firstAttribute="top" secondItem="opb-8g-TCi" secondAttribute="bottom" constant="2" id="AnH-xd-1Pf"/>
+                <constraint firstItem="Rwo-FU-Ami" firstAttribute="leading" secondItem="POy-Md-4Hx" secondAttribute="trailing" constant="2" id="BrT-Hu-IwQ"/>
+                <constraint firstItem="yXJ-yV-JqP" firstAttribute="leading" secondItem="Pfu-DT-5OH" secondAttribute="trailing" constant="2" id="C4i-2U-hTF"/>
+                <constraint firstItem="Osc-V4-cFM" firstAttribute="leading" secondItem="Rwo-FU-Ami" secondAttribute="trailing" constant="2" id="Cd9-JQ-kr5"/>
+                <constraint firstItem="Ice-El-K3R" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="CxL-A6-Xvs"/>
+                <constraint firstItem="qgy-MT-r0v" firstAttribute="top" secondItem="Ice-El-K3R" secondAttribute="bottom" constant="2" id="DOA-2j-Kd2"/>
+                <constraint firstItem="OTb-FY-UrR" firstAttribute="leading" secondItem="dlj-G6-BoI" secondAttribute="leading" constant="22" id="E9I-pZ-oSf"/>
+                <constraint firstItem="ra8-lJ-8tD" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="FDF-eA-aDw"/>
+                <constraint firstAttribute="bottom" secondItem="HiL-NB-de5" secondAttribute="bottom" constant="22" id="FTE-gK-a0h"/>
+                <constraint firstItem="3eg-ZR-0XM" firstAttribute="top" secondItem="gPP-ZV-RBZ" secondAttribute="bottom" constant="2" id="FbY-qp-7Jn"/>
+                <constraint firstItem="VJe-6c-FIv" firstAttribute="leading" secondItem="Zkz-Aj-66k" secondAttribute="trailing" constant="2" id="FeA-gn-Tau"/>
+                <constraint firstItem="xY3-t9-MFJ" firstAttribute="top" secondItem="h9d-fn-VDy" secondAttribute="bottom" constant="2" id="Fq8-N8-ytY"/>
+                <constraint firstItem="sTb-Eo-MHg" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="K4r-qm-uVh"/>
+                <constraint firstItem="PpS-Zn-dqP" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="Km0-Sz-9YL"/>
+                <constraint firstItem="Pfu-DT-5OH" firstAttribute="leading" secondItem="I2y-wE-3Wv" secondAttribute="trailing" constant="2" id="MMV-6l-M80"/>
+                <constraint firstItem="I2y-wE-3Wv" firstAttribute="leading" secondItem="OTb-FY-UrR" secondAttribute="trailing" constant="2" id="Mb3-j8-C5P"/>
+                <constraint firstItem="8a4-f4-K7c" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="Mqh-Tu-TLW"/>
+                <constraint firstItem="1t9-M6-OcD" firstAttribute="leading" secondItem="Osc-V4-cFM" secondAttribute="trailing" constant="2" id="MsC-Ec-jvU"/>
+                <constraint firstItem="W0L-1y-w64" firstAttribute="leading" secondItem="vtJ-4F-Sx0" secondAttribute="trailing" constant="2" id="NPp-Gm-KR2"/>
+                <constraint firstAttribute="trailing" secondItem="Td6-g5-5pL" secondAttribute="trailing" id="NYB-fe-EXo"/>
+                <constraint firstItem="KDH-BJ-ttu" firstAttribute="top" secondItem="Xqe-Sm-k1Y" secondAttribute="bottom" constant="2" id="NqM-ad-KxA"/>
+                <constraint firstItem="Pk2-C2-gfJ" firstAttribute="top" secondItem="ra8-lJ-8tD" secondAttribute="bottom" constant="2" id="PtK-uM-98F"/>
+                <constraint firstItem="Hhi-E1-bTW" firstAttribute="leading" secondItem="dlj-G6-BoI" secondAttribute="leading" constant="11" id="QdX-yg-vKE"/>
+                <constraint firstItem="xUM-Um-Ws1" firstAttribute="leading" secondItem="45C-JM-kAc" secondAttribute="trailing" constant="2" id="QpL-yq-PP5"/>
+                <constraint firstItem="OTb-FY-UrR" firstAttribute="top" secondItem="Hhi-E1-bTW" secondAttribute="bottom" constant="2" id="Rj1-TB-53a"/>
+                <constraint firstItem="HK2-VR-KXu" firstAttribute="leading" secondItem="dlj-G6-BoI" secondAttribute="leading" constant="33" id="TQp-fQ-BvI"/>
+                <constraint firstItem="Pk2-C2-gfJ" firstAttribute="leading" secondItem="aF1-mu-H7h" secondAttribute="trailing" constant="2" id="TVj-f0-d67"/>
+                <constraint firstItem="1ao-fQ-cS9" firstAttribute="top" secondItem="Pk2-C2-gfJ" secondAttribute="bottom" constant="2" id="TbG-r8-94B"/>
+                <constraint firstItem="F5F-Tx-jb2" firstAttribute="top" secondItem="aF1-mu-H7h" secondAttribute="bottom" constant="2" id="UEG-Jn-8Pe"/>
+                <constraint firstItem="BOF-Tn-tjR" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="VB3-Uq-WKc"/>
+                <constraint firstItem="IiB-yF-m2C" firstAttribute="top" secondItem="5kE-Vd-Ibe" secondAttribute="bottom" constant="2" id="WNo-Ei-OiA"/>
+                <constraint firstItem="1ao-fQ-cS9" firstAttribute="leading" secondItem="F5F-Tx-jb2" secondAttribute="trailing" constant="2" id="Y35-CS-ztf"/>
+                <constraint firstItem="gPP-ZV-RBZ" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="YXG-zr-vXH"/>
+                <constraint firstItem="Xqe-Sm-k1Y" firstAttribute="top" secondItem="8a4-f4-K7c" secondAttribute="bottom" constant="2" id="bSj-G7-Yn1"/>
+                <constraint firstItem="16M-6K-3tG" firstAttribute="leading" secondItem="5kE-Vd-Ibe" secondAttribute="trailing" constant="2" id="bZq-Qt-1va"/>
+                <constraint firstItem="Hhi-E1-bTW" firstAttribute="top" secondItem="45C-JM-kAc" secondAttribute="bottom" constant="2" id="bca-23-89n"/>
+                <constraint firstItem="Td6-g5-5pL" firstAttribute="top" secondItem="3eg-ZR-0XM" secondAttribute="bottom" constant="2" id="dez-7b-Vva"/>
+                <constraint firstItem="5kE-Vd-Ibe" firstAttribute="top" secondItem="W0L-1y-w64" secondAttribute="bottom" constant="2" id="eAw-yQ-sck"/>
+                <constraint firstItem="h9d-fn-VDy" firstAttribute="top" secondItem="vtJ-4F-Sx0" secondAttribute="bottom" constant="2" id="eJB-a1-mnh"/>
+                <constraint firstItem="pcY-jQ-vkx" firstAttribute="top" secondItem="xUM-Um-Ws1" secondAttribute="bottom" constant="2" id="egf-2s-hdX"/>
+                <constraint firstItem="aF1-mu-H7h" firstAttribute="top" secondItem="BOF-Tn-tjR" secondAttribute="bottom" constant="2" id="epO-ly-jOd"/>
+                <constraint firstItem="BOF-Tn-tjR" firstAttribute="leading" secondItem="PpS-Zn-dqP" secondAttribute="trailing" constant="2" id="eqY-Q9-j5f"/>
+                <constraint firstItem="yN7-9D-oca" firstAttribute="leading" secondItem="VJe-6c-FIv" secondAttribute="trailing" constant="2" id="eyE-xn-5Gh"/>
+                <constraint firstAttribute="bottom" secondItem="HiL-NB-de5" secondAttribute="bottom" constant="22" id="fdp-9N-YQy"/>
+                <constraint firstItem="qgy-MT-r0v" firstAttribute="leading" secondItem="7Hb-xE-iPV" secondAttribute="trailing" constant="2" id="ffv-kI-HZp"/>
+                <constraint firstItem="inj-oG-Egn" firstAttribute="top" secondItem="oLL-SP-aqj" secondAttribute="bottom" constant="2" id="fhp-hP-MJj"/>
+                <constraint firstItem="oLL-SP-aqj" firstAttribute="leading" secondItem="8a4-f4-K7c" secondAttribute="trailing" constant="2" id="ft3-oZ-jWD"/>
+                <constraint firstItem="IiB-yF-m2C" firstAttribute="leading" secondItem="xY3-t9-MFJ" secondAttribute="trailing" constant="2" id="g0N-2B-JL8"/>
+                <constraint firstItem="vtJ-4F-Sx0" firstAttribute="leading" secondItem="oLL-SP-aqj" secondAttribute="trailing" constant="2" id="g6T-vm-J20"/>
+                <constraint firstItem="bLO-HZ-6kK" firstAttribute="leading" secondItem="HK2-VR-KXu" secondAttribute="trailing" constant="2" id="iS5-pw-iDX"/>
+                <constraint firstItem="W0L-1y-w64" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="imy-lf-6j2"/>
+                <constraint firstItem="inj-oG-Egn" firstAttribute="leading" secondItem="Xqe-Sm-k1Y" secondAttribute="trailing" constant="2" id="j0u-4N-0dY"/>
+                <constraint firstItem="7Hb-xE-iPV" firstAttribute="leading" secondItem="pcY-jQ-vkx" secondAttribute="trailing" constant="2" id="jZ5-LS-Wtt"/>
+                <constraint firstItem="Xqe-Sm-k1Y" firstAttribute="leading" secondItem="qgy-MT-r0v" secondAttribute="trailing" constant="2" id="k44-It-FHL"/>
+                <constraint firstItem="opb-8g-TCi" firstAttribute="top" secondItem="inj-oG-Egn" secondAttribute="bottom" constant="2" id="kDR-8X-sad"/>
+                <constraint firstItem="xUM-Um-Ws1" firstAttribute="top" secondItem="dlj-G6-BoI" secondAttribute="top" constant="22" id="kq5-7P-uRQ"/>
+                <constraint firstItem="8a4-f4-K7c" firstAttribute="leading" secondItem="Ice-El-K3R" secondAttribute="trailing" constant="2" id="lCI-6n-fCR"/>
+                <constraint firstItem="PpS-Zn-dqP" firstAttribute="leading" secondItem="W0L-1y-w64" secondAttribute="trailing" constant="2" id="lgF-mD-KfN"/>
+                <constraint firstItem="Osc-V4-cFM" firstAttribute="top" secondItem="219-Qf-qR6" secondAttribute="bottom" constant="2" id="m7L-Z7-yGf"/>
+                <constraint firstItem="Pfu-DT-5OH" firstAttribute="top" secondItem="7Hb-xE-iPV" secondAttribute="bottom" constant="2" id="mJQ-HJ-Uck"/>
+                <constraint firstItem="Ice-El-K3R" firstAttribute="leading" secondItem="sTb-Eo-MHg" secondAttribute="trailing" constant="2" id="mLL-OV-zmi"/>
+                <constraint firstItem="HK2-VR-KXu" firstAttribute="top" secondItem="OTb-FY-UrR" secondAttribute="bottom" constant="2" id="mbO-aq-Ghg"/>
+                <constraint firstItem="VJe-6c-FIv" firstAttribute="top" secondItem="yXJ-yV-JqP" secondAttribute="bottom" constant="2" id="med-Xo-LSb"/>
+                <constraint firstItem="bLO-HZ-6kK" firstAttribute="top" secondItem="I2y-wE-3Wv" secondAttribute="bottom" constant="2" id="mnm-4h-0zN"/>
+                <constraint firstItem="KDH-BJ-ttu" firstAttribute="leading" secondItem="yXJ-yV-JqP" secondAttribute="trailing" constant="2" id="odi-SN-wcT"/>
+                <constraint firstItem="F5F-Tx-jb2" firstAttribute="leading" secondItem="219-Qf-qR6" secondAttribute="trailing" constant="2" id="qQm-5w-sos"/>
+                <constraint firstItem="sTb-Eo-MHg" firstAttribute="leading" secondItem="xUM-Um-Ws1" secondAttribute="trailing" constant="2" id="rX7-Uh-AYy"/>
+                <constraint firstItem="HiL-NB-de5" firstAttribute="leading" secondItem="dlj-G6-BoI" secondAttribute="leading" constant="88" id="rwv-wu-xgm"/>
+                <constraint firstItem="gPP-ZV-RBZ" firstAttribute="leading" secondItem="ra8-lJ-8tD" secondAttribute="trailing" constant="2" id="s9D-Xu-XFF"/>
+                <constraint firstItem="xY3-t9-MFJ" firstAttribute="leading" secondItem="opb-8g-TCi" secondAttribute="trailing" constant="2" id="tKU-NH-R3n"/>
+                <constraint firstItem="HiL-NB-de5" firstAttribute="top" secondItem="bLO-HZ-6kK" secondAttribute="bottom" constant="2" id="uUJ-Zu-n3k"/>
+                <constraint firstItem="ra8-lJ-8tD" firstAttribute="leading" secondItem="BOF-Tn-tjR" secondAttribute="trailing" constant="2" id="uXa-kj-0KA"/>
+                <constraint firstItem="16M-6K-3tG" firstAttribute="top" secondItem="PpS-Zn-dqP" secondAttribute="bottom" constant="2" id="vZd-Oi-76l"/>
+                <constraint firstItem="1t9-M6-OcD" firstAttribute="top" secondItem="F5F-Tx-jb2" secondAttribute="bottom" constant="2" id="vyR-LW-8Bf"/>
+                <constraint firstItem="POy-Md-4Hx" firstAttribute="leading" secondItem="tnT-et-kQX" secondAttribute="trailing" constant="2" id="w7K-dz-njK"/>
+                <constraint firstItem="5kE-Vd-Ibe" firstAttribute="leading" secondItem="h9d-fn-VDy" secondAttribute="trailing" constant="2" id="xKu-VP-xuT"/>
+                <constraint firstItem="3eg-ZR-0XM" firstAttribute="leading" secondItem="Pk2-C2-gfJ" secondAttribute="trailing" constant="2" id="xvC-8J-sMg"/>
+                <constraint firstItem="opb-8g-TCi" firstAttribute="leading" secondItem="KDH-BJ-ttu" secondAttribute="trailing" constant="2" id="y2o-yl-AAI"/>
+                <constraint firstItem="219-Qf-qR6" firstAttribute="leading" secondItem="IiB-yF-m2C" secondAttribute="trailing" constant="2" id="yYC-JX-ebh"/>
+                <constraint firstItem="aF1-mu-H7h" firstAttribute="leading" secondItem="16M-6K-3tG" secondAttribute="trailing" constant="2" id="yiK-Lm-Vrw"/>
+                <constraint firstItem="Rwo-FU-Ami" firstAttribute="top" secondItem="IiB-yF-m2C" secondAttribute="bottom" constant="2" id="zBV-8u-vm5"/>
+            </constraints>
+            <point key="canvasLocation" x="324" y="298"/>
+        </customView>
+    </objects>
+</document>

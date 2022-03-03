@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LookupToolController">
+            <connections>
+                <outlet property="lookupMethod" destination="a39-8J-Y7K" id="dEb-VL-ov8"/>
+                <outlet property="searchField" destination="PvH-KD-Keh" id="XM0-kt-Oqb"/>
+                <outlet property="splitView" destination="R3V-pr-wFz" id="aey-pr-wFz"/>
+                <outlet property="translationList" destination="Nq3-gF-JOH" id="aey-If-cS9"/>
+                <outlet property="win" destination="QvC-M9-y7g" id="qs4-T4-p2I"/>
+                <outlet property="wordList" destination="1LW-nx-Del" id="JFi-Td-R0y"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Lookup" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="745" height="587"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="745" height="587"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl identifier="lookupMethod" verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a39-8J-Y7K">
+                        <rect key="frame" x="18" y="544" width="192" height="24"/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="W6c-dr-L6x">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="By Translation" selected="YES"/>
+                                <segment label="By Stroke" tag="1"/>
+                            </segments>
+                            <connections>
+                                <action selector="changeLookupMethod:" target="-2" id="Bs6-8f-MkU"/>
+                            </connections>
+                        </segmentedCell>
+                    </segmentedControl>
+                    <searchField identifier="searchField" wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-KD-Keh">
+                        <rect key="frame" x="216" y="545" width="509" height="22"/>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" identifier="searchField" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="3cV-vQ-e2F">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </searchFieldCell>
+                    </searchField>
+                    <splitView arrangesAllSubviews="NO" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3V-pr-wFz">
+                        <rect key="frame" x="20" y="20" width="705" height="517"/>
+                        <subviews>
+                            <scrollView identifier="wordList" wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="fBL-kP-chB">
+                                <rect key="frame" x="0.0" y="0.0" width="177" height="517"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" copiesOnScroll="NO" id="cUN-LW-x9C">
+                                    <rect key="frame" x="1" y="1" width="175" height="515"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView selectable="YES" allowsEmptySelection="NO" id="1LW-nx-Del">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="515"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="C80-lM-vlm">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Zs5-1p-VUd">
+                                    <rect key="frame" x="-100" y="-100" width="0.0" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="8qi-Ss-AMz">
+                                    <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <scrollView identifier="dictionaryList" wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="oQe-AU-7TA">
+                                <rect key="frame" x="186" y="0.0" width="519" height="517"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" copiesOnScroll="NO" id="oN8-Pc-JCX">
+                                    <rect key="frame" x="1" y="1" width="517" height="515"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView selectable="YES" id="Nq3-gF-JOH">
+                                            <rect key="frame" x="0.0" y="0.0" width="517" height="515"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="PoD-ra-wOh">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="XUH-Qq-7br">
+                                    <rect key="frame" x="-100" y="-100" width="457" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Bwl-Gb-OXV">
+                                    <rect key="frame" x="-15" y="1" width="16" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PvH-KD-Keh" secondAttribute="trailing" constant="20" symbolic="YES" id="3eo-qV-dcu"/>
+                    <constraint firstItem="a39-8J-Y7K" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="6V9-DI-eCf"/>
+                    <constraint firstItem="PvH-KD-Keh" firstAttribute="leading" secondItem="a39-8J-Y7K" secondAttribute="trailing" constant="8" symbolic="YES" id="6rB-3B-ReI"/>
+                    <constraint firstAttribute="bottom" secondItem="R3V-pr-wFz" secondAttribute="bottom" constant="20" symbolic="YES" id="Njd-15-fSF"/>
+                    <constraint firstItem="R3V-pr-wFz" firstAttribute="top" secondItem="PvH-KD-Keh" secondAttribute="bottom" constant="8" symbolic="YES" id="OtT-xY-FP1"/>
+                    <constraint firstAttribute="trailing" secondItem="R3V-pr-wFz" secondAttribute="trailing" constant="20" symbolic="YES" id="aZ9-PM-FIF"/>
+                    <constraint firstItem="PvH-KD-Keh" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="ay1-5x-dFh"/>
+                    <constraint firstItem="a39-8J-Y7K" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="ir2-J6-nGQ"/>
+                    <constraint firstItem="R3V-pr-wFz" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="xt4-DW-znI"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="171.5" y="255.5"/>
+        </window>
+    </objects>
+</document>

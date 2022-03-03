@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17132" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17132"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WordListItem">
+            <connections>
+                <outlet property="strokeField" destination="jay-Gd-8FW" id="tWk-Nu-fHz"/>
+                <outlet property="translationField" destination="IQU-8e-nha" id="mLr-fH-Pxn"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <collectionViewItem title="WordListItem" nibName="WordListItem" id="3L8-Dl-nQh" customClass="WordListItem">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="6jS-jv-4dC"/>
+            </connections>
+        </collectionViewItem>
+        <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY" customClass="WordListItemView">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="35"/>
+            <subviews>
+                <textField identifier="translationField" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-8e-nha">
+                    <rect key="frame" x="3" y="18" width="120" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="QsZ-Fa-TQV"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Translation" usesSingleLineMode="YES" id="evS-xF-RQt">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField identifier="strokeField" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jay-Gd-8FW">
+                    <rect key="frame" x="18" y="3" width="105" height="15"/>
+                    <textFieldCell key="cell" allowsUndo="NO" title="Stroke" id="lQi-Jh-An2">
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jay-Gd-8FW" firstAttribute="top" secondItem="IQU-8e-nha" secondAttribute="bottom" id="BhB-wC-faa"/>
+                <constraint firstAttribute="trailing" secondItem="IQU-8e-nha" secondAttribute="trailing" constant="5" id="Cqg-sp-zhw"/>
+                <constraint firstItem="IQU-8e-nha" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="Kxu-N9-3d7"/>
+                <constraint firstAttribute="trailing" secondItem="jay-Gd-8FW" secondAttribute="trailing" constant="5" id="MjM-w8-Fde"/>
+                <constraint firstAttribute="bottom" secondItem="jay-Gd-8FW" secondAttribute="bottom" constant="3" id="Ve4-KZ-P4P"/>
+                <constraint firstItem="IQU-8e-nha" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="3" id="m5C-qq-eck"/>
+                <constraint firstItem="jay-Gd-8FW" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="sb6-fJ-gkF"/>
+            </constraints>
+            <point key="canvasLocation" x="-125" y="-39"/>
+        </customView>
+    </objects>
+</document>

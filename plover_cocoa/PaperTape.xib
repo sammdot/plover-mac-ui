@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17132" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17132"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PaperTapeController">
+            <connections>
+                <outlet property="tape" destination="o0m-aC-SK3" id="oQs-Ek-zSV"/>
+                <outlet property="win" destination="QvC-M9-y7g" id="EEj-aA-lga"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="PaperTapeController"/>
+        <window title="Paper Tape" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="240" height="800"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="800"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView borderType="none" horizontalLineScroll="0.0" horizontalPageScroll="0.0" verticalLineScroll="10" verticalPageScroll="0.0" hasHorizontalScroller="NO" horizontalScrollElasticity="none" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="w8f-Ig-kXB">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="800"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="L3a-JD-K3E">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="800"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView identifier="tape" editable="NO" selectable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" id="o0m-aC-SK3">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="800"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="240" height="800"/>
+                                    <size key="maxSize" width="240" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="bds-GA-OVc">
+                            <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Ukq-WA-XW7">
+                            <rect key="frame" x="224" y="0.0" width="16" height="800"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="w8f-Ig-kXB" secondAttribute="trailing" id="7Bc-t7-2Vb"/>
+                    <constraint firstItem="w8f-Ig-kXB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="DIA-Jq-g02"/>
+                    <constraint firstItem="w8f-Ig-kXB" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="G5j-en-bcS"/>
+                    <constraint firstAttribute="bottom" secondItem="w8f-Ig-kXB" secondAttribute="bottom" id="hj9-dd-kkw"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="140" y="147"/>
+        </window>
+    </objects>
+</document>

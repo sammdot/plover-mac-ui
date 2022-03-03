@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LayoutDisplayController">
+            <connections>
+                <outlet property="display" destination="bD0-TP-Kvz" id="qs5-X4-p2I"/>
+                <outlet property="strokeLabel" destination="BCX-6i-3xy" id="qs4-X4-p2I"/>
+                <outlet property="win" destination="QvC-M9-y7g" id="qs4-T4-p2I"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Layout Display" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="533" height="367"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="516" height="331"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-mJ-JdK">
+                        <rect key="frame" x="20" y="20" width="476" height="291"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCX-6i-3xy">
+                                <rect key="frame" x="-2" y="262" width="480" height="29"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Stroke" id="WHF-IW-mKm">
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="bD0-TP-Kvz" customClass="LayoutDisplayView">
+                                <rect key="frame" x="0.0" y="0.0" width="476" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="476" id="7pE-FC-mxW"/>
+                                    <constraint firstAttribute="height" constant="232" id="YJd-Q4-dZC"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bD0-TP-Kvz" secondAttribute="trailing" id="JCd-V0-I75"/>
+                            <constraint firstItem="BCX-6i-3xy" firstAttribute="top" secondItem="VWT-mJ-JdK" secondAttribute="top" id="LRf-pO-dBO"/>
+                            <constraint firstItem="bD0-TP-Kvz" firstAttribute="top" secondItem="BCX-6i-3xy" secondAttribute="bottom" constant="30" id="T0u-JS-Pzx"/>
+                            <constraint firstAttribute="bottom" secondItem="bD0-TP-Kvz" secondAttribute="bottom" id="ZFc-Zo-EXI"/>
+                            <constraint firstItem="bD0-TP-Kvz" firstAttribute="leading" secondItem="VWT-mJ-JdK" secondAttribute="leading" id="cVI-T4-ReP"/>
+                            <constraint firstItem="BCX-6i-3xy" firstAttribute="leading" secondItem="VWT-mJ-JdK" secondAttribute="leading" id="d21-sU-M9b"/>
+                            <constraint firstAttribute="trailing" secondItem="BCX-6i-3xy" secondAttribute="trailing" id="jcO-RP-EKm"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VWT-mJ-JdK" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="1fo-d6-5Yh"/>
+                    <constraint firstItem="VWT-mJ-JdK" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="4Sx-5y-zLU"/>
+                    <constraint firstAttribute="trailing" secondItem="VWT-mJ-JdK" secondAttribute="trailing" constant="20" symbolic="YES" id="U4u-ao-lLN"/>
+                    <constraint firstAttribute="bottom" secondItem="VWT-mJ-JdK" secondAttribute="bottom" constant="20" symbolic="YES" id="eS8-hL-Unj"/>
+                    <constraint firstAttribute="bottom" secondItem="VWT-mJ-JdK" secondAttribute="bottom" constant="20" symbolic="YES" id="t0S-yS-EhT"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="-72.5" y="-120.5"/>
+        </window>
+    </objects>
+</document>
