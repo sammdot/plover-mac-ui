@@ -8,10 +8,10 @@ from AppKit import (
 from Foundation import NSObject
 from objc import IBOutlet, ivar, protocolNamed
 
-from plover_cocoa.fonts import suggestions_steno_font
-from plover_cocoa.lookup_format import format_for_word_list
-from plover_cocoa.lookup_model import LookupMethod
-from plover_cocoa.steno import STROKE_DELIMITER
+from plover_mac_ui.fonts import suggestions_steno_font
+from plover_mac_ui.lookup_format import format_for_word_list
+from plover_mac_ui.lookup_model import LookupMethod
+from plover_mac_ui.steno import STROKE_DELIMITER
 
 NSCollectionViewDataSource = protocolNamed("NSCollectionViewDataSource")
 NSCollectionViewDelegate = protocolNamed("NSCollectionViewDelegate")

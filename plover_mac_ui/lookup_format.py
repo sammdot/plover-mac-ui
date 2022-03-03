@@ -15,7 +15,7 @@ from AppKit import (
 from Foundation import NSMutableAttributedString
 
 from plover.key_combo import KEYNAME_TO_CHAR
-from plover_cocoa.fonts import LOOKUP_LIST_FONT
+from plover_mac_ui.fonts import LOOKUP_LIST_FONT
 
 Function = type(lambda a: a)
 

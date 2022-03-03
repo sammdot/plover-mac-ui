@@ -11,14 +11,14 @@ from objc import IBOutlet, protocolNamed
 
 from plover.formatting import RetroFormatter
 from plover.suggestions import Suggestion
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.fonts import (
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.fonts import (
   SUGGESTIONS_FONT,
   suggestions_steno_font,
   to_halfwidth,
 )
-from plover_cocoa.steno import STROKE_DELIMITER
-from plover_cocoa.tool import Tool
+from plover_mac_ui.steno import STROKE_DELIMITER
+from plover_mac_ui.tool import Tool
 
 NSWindowDelegate = protocolNamed("NSWindowDelegate")
 

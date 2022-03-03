@@ -9,13 +9,13 @@ from plover.machine.base import SerialStenotypeBase
 from plover.machine.keyboard import Keyboard
 from plover.machine.keymap import Keymap
 from plover.registry import registry
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.layout_model import display_controller_for
-from plover_cocoa.systems import (
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.layout_model import display_controller_for
+from plover_mac_ui.systems import (
   MACHINE_NAMES, SYSTEM_NAMES,
   pretty_machine_name, pretty_system_name,
 )
-from plover_cocoa.tool import Tool
+from plover_mac_ui.tool import Tool
 
 class PreferencesController(Tool):
   actionText = "Preferences..."

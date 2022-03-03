@@ -14,19 +14,19 @@ from AppKit import (
 from objc import IBOutlet, ivar
 
 from plover import system
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.fonts import (
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.fonts import (
   is_korean,
   key_list_bold_font,
   key_list_font,
   to_halfwidth,
 )
-from plover_cocoa.layout_display_views import *
-from plover_cocoa.layout_display_controllers import *
-from plover_cocoa.layout_model import display_controller_for, STROKE_TIMEOUT
-from plover_cocoa.resources import BUNDLE
-from plover_cocoa.steno_layout import remove_numbers
-from plover_cocoa.tool import Tool
+from plover_mac_ui.layout_display_views import *
+from plover_mac_ui.layout_display_controllers import *
+from plover_mac_ui.layout_model import display_controller_for, STROKE_TIMEOUT
+from plover_mac_ui.resources import BUNDLE
+from plover_mac_ui.steno_layout import remove_numbers
+from plover_mac_ui.tool import Tool
 
 class LayoutDisplayController(Tool):
   actionText = "Layout Display"

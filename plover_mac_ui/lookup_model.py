@@ -7,8 +7,8 @@ from plover import system
 from plover.oslayer.config import CONFIG_DIR
 from plover.resource import ASSET_SCHEME
 from plover.steno import sort_steno_strokes
-from plover_cocoa.resources import icon_named
-from plover_cocoa.steno import STROKE_DELIMITER
+from plover_mac_ui.resources import icon_named
+from plover_mac_ui.steno import STROKE_DELIMITER
 
 Translation = namedtuple("Translation", "strokes translation dictionary comment bad reason")
 Translation.__new__.__defaults__ = (None,) * len(Translation._fields)

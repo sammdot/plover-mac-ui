@@ -1,4 +1,4 @@
-from plover_cocoa.tool import Tool
+from plover_mac_ui.tool import Tool
 
 class DictionaryManagerController(Tool):
   enabled = False

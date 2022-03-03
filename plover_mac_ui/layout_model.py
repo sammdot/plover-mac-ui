@@ -1,6 +1,6 @@
 from enum import Enum
 
-from plover_cocoa.layout_display_views import (
+from plover_mac_ui.layout_display_views import (
   PreonicDisplayView,
   QwertyDisplayView,
   SplitoDisplayView,
@@ -10,7 +10,7 @@ from plover_cocoa.layout_display_views import (
   UniDisplayView,
   ZenDisplayView,
 )
-from plover_cocoa.layout_display_controllers import (
+from plover_mac_ui.layout_display_controllers import (
   PreonicDisplayController,
   QwertyDisplayController,
   SplitoDisplayController,

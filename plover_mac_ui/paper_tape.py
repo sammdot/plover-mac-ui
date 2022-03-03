@@ -8,10 +8,10 @@ from Foundation import NSAttributedString
 from objc import IBOutlet
 
 from plover import system
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.colors import DARK
-from plover_cocoa.fonts import is_zh_ja, is_korean, to_halfwidth, paper_tape_font
-from plover_cocoa.tool import Tool
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.colors import DARK
+from plover_mac_ui.fonts import is_zh_ja, is_korean, to_halfwidth, paper_tape_font
+from plover_mac_ui.tool import Tool
 
 LINES = 40
 

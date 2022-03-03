@@ -1,8 +1,8 @@
 from AppKit import NSApplication, NSWindowController
 from objc import IBOutlet, super
 
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.resources import nib_path
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.resources import nib_path
 
 class Tool(NSWindowController):
   enabled = True

@@ -10,28 +10,28 @@ from AppKit import (
 from Foundation import NSObject
 from objc import IBAction, IBOutlet, ivar, protocolNamed, super
 
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.lookup_model import (
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.lookup_model import (
   Dictionary,
   LookupMethod,
   LookupResultReason,
   MAX_RESULTS,
 )
-from plover_cocoa.lookup_word_list import (
+from plover_mac_ui.lookup_word_list import (
   WordListItem,
   WordListItemView,
   WordListLayout,
   WordListController,
 )
-from plover_cocoa.lookup_translation_list import (
+from plover_mac_ui.lookup_translation_list import (
   TranslationListItem,
   TranslationListItemView,
   TranslationListLayout,
   TranslationListController,
 )
-from plover_cocoa.resources import nib_named
-from plover_cocoa.tool import Tool
-from plover_cocoa.utils import debounce
+from plover_mac_ui.resources import nib_named
+from plover_mac_ui.tool import Tool
+from plover_mac_ui.utils import debounce
 
 NSControlTextEditingDelegate = protocolNamed("NSControlTextEditingDelegate")
 NSSplitViewDelegate = protocolNamed("NSSplitViewDelegate")

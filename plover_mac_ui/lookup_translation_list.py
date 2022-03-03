@@ -11,11 +11,11 @@ from AppKit import (
 from Foundation import NSObject
 from objc import IBOutlet, ivar, protocolNamed
 
-from plover_cocoa.fonts import lookup_steno_font
-from plover_cocoa.lookup_format import display_string, format_for_translation_list, TokenType
-from plover_cocoa.lookup_model import LookupMethod, LookupResultReason
-from plover_cocoa.resources import tintWithColor_
-from plover_cocoa.steno import STROKE_DELIMITER
+from plover_mac_ui.fonts import lookup_steno_font
+from plover_mac_ui.lookup_format import display_string, format_for_translation_list, TokenType
+from plover_mac_ui.lookup_model import LookupMethod, LookupResultReason
+from plover_mac_ui.resources import tintWithColor_
+from plover_mac_ui.steno import STROKE_DELIMITER
 
 NSCollectionViewDataSource = protocolNamed("NSCollectionViewDataSource")
 NSCollectionViewDelegate = protocolNamed("NSCollectionViewDelegate")

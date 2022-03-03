@@ -11,8 +11,8 @@ from AppKit import (
 from Foundation import NSAttributedString, NSMakePoint
 from objc import ivar, super
 
-from plover_cocoa import colors
-from plover_cocoa.fonts import key_name_font, SMALL_KEY_NAME_FONT
+from plover_mac_ui import colors
+from plover_mac_ui.fonts import key_name_font, SMALL_KEY_NAME_FONT
 
 class DisplayView(NSView):
   clickHandler = ivar()

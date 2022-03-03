@@ -1,11 +1,11 @@
-# Plover Cocoa
+# Plover Mac UI
 
 An experimental Cocoa-based UI for Plover (Mac only).
 
 After installing this plugin, run Plover with
 
 ```
-plover -g cocoa
+plover -g mac
 ```
 
 to use.

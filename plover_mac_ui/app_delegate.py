@@ -24,11 +24,11 @@ import plover
 from plover import system
 from plover.config import DictionaryConfig
 from plover.registry import Plugin, registry
-from plover_cocoa.fonts import DEFAULT_FONT
-from plover_cocoa.lookup_model import Dictionary
-from plover_cocoa.preferences import PreferencesController
-from plover_cocoa.resources import icon_named, nib_named, plover_logo
-from plover_cocoa.systems import (
+from plover_mac_ui.fonts import DEFAULT_FONT
+from plover_mac_ui.lookup_model import Dictionary
+from plover_mac_ui.preferences import PreferencesController
+from plover_mac_ui.resources import icon_named, nib_named, plover_logo
+from plover_mac_ui.systems import (
   MACHINE_NAMES, machine_plugin, pretty_machine_name, machine_icon,
   SYSTEM_NAMES, system_plugin, pretty_system_name, system_abbr, system_icon,
 )
@@ -67,7 +67,7 @@ class AppDelegate(NSObject, protocols=[NSApplicationDelegate]):
 
     self.tools = {
       plugin.name: plugin.obj.alloc().initWithEngine_(engine)
-      for plugin in registry.list_plugins("gui.cocoa.tool")
+      for plugin in registry.list_plugins("gui.mac.tool")
       if plugin.obj.enabled
     }
     self.prefs = PreferencesController.alloc().initWithEngine_(engine)
@@ -162,7 +162,7 @@ class AppDelegate(NSObject, protocols=[NSApplicationDelegate]):
       self.manageDictMenuItem,
 
       NSMenuItem.separatorItem(),
-      *map(make_tool_item, registry.list_plugins("gui.cocoa.tool")),
+      *map(make_tool_item, registry.list_plugins("gui.mac.tool")),
 
       NSMenuItem.separatorItem(),
       make_item(self.prefs.actionText, "openPreferences", ","),

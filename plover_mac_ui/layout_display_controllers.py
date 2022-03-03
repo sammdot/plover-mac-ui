@@ -2,8 +2,8 @@ from AppKit import NSMenu, NSMenuItem, NSOffState, NSOnState, NSViewController
 from Quartz import CGPointMake
 from objc import IBOutlet, ivar, super
 
-from plover_cocoa.async_utils import do_async
-from plover_cocoa.resources import BUNDLE
+from plover_mac_ui.async_utils import do_async
+from plover_mac_ui.resources import BUNDLE
 
 class DisplayController(NSViewController):
   nibName = None

@@ -14,11 +14,11 @@ from PyObjCTools import AppHelper
 from plover import log
 from plover.oslayer import keyboardcontrol
 from plover.registry import registry
-from plover_cocoa.app_delegate import AppDelegate
-from plover_cocoa.engine import Engine
-from plover_cocoa.fonts import DEFAULT_FONT
-from plover_cocoa.resources import plover_logo
-from plover_cocoa.utils import every
+from plover_mac_ui.app_delegate import AppDelegate
+from plover_mac_ui.engine import Engine
+from plover_mac_ui.fonts import DEFAULT_FONT
+from plover_mac_ui.resources import plover_logo
+from plover_mac_ui.utils import every
 
 class KeyboardEmulation(keyboardcontrol.KeyboardEmulation):
   LIMIT_PER_STRING = 20
@@ -65,9 +65,9 @@ def main(config, controller):
   if not engine.load_config():
     return 3
 
-  # Add Cocoa GUI tools as a plugin type
-  registry.PLUGIN_TYPES += ("gui.cocoa.tool",)
-  registry._plugins["gui.cocoa.tool"] = {}
+  # Add Mac UI tools as a plugin type
+  registry.PLUGIN_TYPES += ("gui.mac.tool",)
+  registry._plugins["gui.mac.tool"] = {}
   registry.update()
 
   # Add hooks
